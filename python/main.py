@@ -10,31 +10,29 @@ print ("===============================")
 
 while True:
 
-    opcion = str(input("Ingrese una opción: "))
-    if opcion == "1": str (input())
-    print (f"Opcion 1: usted ha seleccionado Registrar Alumno")
 
-    if opcion_2 == "2": str (input())
-    print (f"Opcion 2: usted ha seleccionado Registrar Profesor")
+    opcion = str (input("Seleccione una opción:: "))
 
-    opcion_3 = str(input("Ingrese una opción: "))
-    if opcion_3 == "3": str (input())
-    print (f"Opcion 3: usted ha seleccionado Registrar Notas a un Alumno")
+    if opcion == "1":
+        
+        print (f" Usted ha seleccionado Registrar Alumno")
 
-    opcion_4 = str(input("Ingrese una opción: "))
-    if opcion_4 == "4": str (input())
-    print (f"Opcion 4: usted ha seleccionado Deshacer Ultimo Registro de Nota")
+    elif opcion == "2":
+        opcion = input("opcion: ")
+        print (f" Usted ha seleccionado Registrar Profesor")
 
-    opcion_5 = str(input("Ingrese una opción: "))
-    if opcion_5 == "5": str (input())
-    print (f"Opcion 5: usted ha seleccionado Generar Cola de Certificados")
+    elif opcion == "3":
+        print (f" Usted ha seleccionado Registrar Notas a un Alumno")
 
-    opcion_6 = str(input("Ingrese una opción: "))
-    if opcion_6 == "6": str (input())
-    print (f"Opcion 6: usted ha seleccionado Mostrar Reporte General")
+    elif opcion == "4":
+        print (f" Usted ha seleccionado Deshacer Último Registro de Nota")
 
-    opcion_7 = str(input("Ingrese una opción: "))
-    if opcion_7 == "7": str (input())
-    print (f"Opcion 7: usted ha seleccionado Salir")
+    elif opcion == "5":
+        print (f" Usted ha seleccionado Generar Cola de Certificados")
 
+    elif opcion == "6":
+        print (f" Usted ha seleccionado Mostrar Reporte General")
+
+    elif opcion == "7":
+        print (f" Usted ha seleccionado Salir")
     break
