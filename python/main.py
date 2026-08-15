@@ -22,13 +22,12 @@ while True:
         nombre = str (input("Ingrese el nombre del alumno: "))
         correo = str (input("Ingrese el correo del alumno: "))
         programa = str (input("Ingrese el programa del alumno: "))
-        notas = []
         
-        nuevo_alumno = Alumno(cedula, nombre, correo, notas, programa)
+        nuevo_alumno = Alumno(cedula, nombre, correo, programa)
         
         archivo = open("alumnos.txt", "a")
                 
-        archivo.write(f"{nuevo_alumno.cedula},{nuevo_alumno.nombre},{nuevo_alumno.correo},{nuevo_alumno.notas},{nuevo_alumno.programa}\n")
+        archivo.write(f"{nuevo_alumno.cedula},{nuevo_alumno.nombre},{nuevo_alumno.correo},{nuevo_alumno.programa}\n")
         archivo.close()
                 
         print("\n¡Alumno registrado y guardado en el archivo!")
@@ -41,8 +40,7 @@ while True:
         nombre = str (input("Ingrese el nombre del profesor: "))
         correo = str (input("Ingrese el correo del profesor: "))
         materia = str (input("Ingrese la materia del profesor: "))
-        
-            
+         
         nuevo_profesor = Profesor(cedula, nombre, correo, materia)
             
         archivo = open("profesores.txt", "a")
@@ -54,7 +52,57 @@ while True:
 
 
     elif opcion == "3":
-        print (f" Usted ha seleccionado Registrar Notas a un Alumno")
+        print("--- Registrar Notas a un Alumno ---")
+        
+        if opcion == "3":
+            cedula_buscada = input("Ingrese la cédula del alumno a calificar: ")
+            
+            # Pedimos la primera nota
+            nueva_nota = input("Ingrese la nota: ")
+            
+            # Vamos a usar una variable de texto para acumular las notas
+            # Le ponemos la coma de una vez para que quede lista para pegar
+            texto_notas = "," + nueva_nota
+            
+            # Hacemos la pregunta que querías
+            respuesta = input("¿quiere subir otra nota? si o no?: ")
+            
+            # Este while es como tu if, pero se repite mientras escriban "si"
+            while respuesta == "si":
+                nueva_nota = input("Ingrese la nota: ")
+                
+                # Acumulamos la nota nueva en nuestro texto
+                texto_notas = texto_notas + "," + nueva_nota
+                
+                # Volvemos a preguntar para ver si el ciclo sigue o se rompe
+                respuesta = input("¿quiere subir otra nota? si o no?: ")
+
+            # 1. Leemos el archivo
+            archivo = open("alumnos.txt", "r")
+            lineas = archivo.readlines()
+            archivo.close()
+
+            # 2. Abrimos para reescribir
+            archivo = open("alumnos.txt", "w")
+
+            # 3. Buscamos y guardamos
+            for linea in lineas:
+                datos = linea.split(",") 
+                cedula_en_archivo = datos[0] 
+
+                if cedula_en_archivo == cedula_buscada:
+                    linea_sin_enter = linea.replace("\n", "")
+                    
+                    # Le pegamos el texto_notas que ya tiene toooodas las notas acumuladas
+                    linea_nueva = linea_sin_enter + texto_notas + "\n"
+                    
+                    archivo.write(linea_nueva)
+                else:
+                    archivo.write(linea)
+
+            archivo.close()
+            print("Notas registradas al alumno.")
+            
 
     elif opcion == "4":
         print (f" Usted ha seleccionado Deshacer Último Registro de Nota")
