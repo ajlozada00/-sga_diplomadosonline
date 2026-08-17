@@ -107,6 +107,52 @@ while True:
     elif opcion == "4":
         print (f" Usted ha seleccionado Deshacer Último Registro de Nota")
 
+        if opcion == "4":
+                cedula_buscada = input("Ingresa la cédula del alumno para eliminar su última nota: ")
+
+                # 1. Leemos el archivo completo
+                archivo = open("alumnos.txt", "r")
+                lineas = archivo.readlines()
+                archivo.close()
+
+                # 2. Lo abrimos en modo escritura para actualizarlo
+                archivo = open("alumnos.txt", "w")
+
+                # 3. Revisamos línea por línea
+                for linea in lineas:
+                    # Primero le quitamos el "enter" (\n) para que no nos estorbe al final
+                    linea_limpia = linea.replace("\n", "")
+                    
+                    # Picamos la línea en una lista
+                    datos = linea_limpia.split(",") 
+                    
+                    # La cédula siempre es el primer pedazo
+                    cedula_en_archivo = datos[0] 
+
+                    if cedula_en_archivo == cedula_buscada:
+                        
+                        # --- AQUÍ APLICAMOS EL LIFO ---
+                        # Usamos .pop() para eliminar el último elemento de la lista 'datos'
+                        datos.pop()
+                        
+                        # Volvemos a unir la lista en un solo texto, separado por comas
+                        linea_nueva = ",".join(datos)
+                        
+                        # Le volvemos a poner el "enter" al final y guardamos
+                        archivo.write(linea_nueva + "\n")
+                        
+                    else:
+                        # Si no es el alumno que buscamos, guardamos su línea sin hacerle nada
+                        archivo.write(linea)
+
+                archivo.close()
+                print("Última nota eliminada con éxito.")
+
+
+
+
+        
+
     elif opcion == "5":
         print (f" Usted ha seleccionado Generar Cola de Certificados")
 
