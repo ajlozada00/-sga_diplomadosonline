@@ -1,0 +1,4 @@
+2164578,Nelson ramirez,nelsonr@gmail.com,diplomado
+1111,Luis Mendoza,luis@gmail.com,bootcam
+202020,raul mendoza,raul@gmail.com,bootcamp
+151515,john casares,jogn@gmail.com,curso

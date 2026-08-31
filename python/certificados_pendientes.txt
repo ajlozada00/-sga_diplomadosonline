@@ -1,0 +1,37 @@
+=========================================
+REPORTE DE CERTIFICADOS PENDIENTES
+=========================================
+Total de graduandos en cola: 6
+
+1. [V-21615026] armando lozada
+  - Programa: Curso
+  - Promedio Final: 10.0
+  - Estatus: APROBADO
+
+2. [V-4423891] judith alvarez
+  - Programa: Curso
+  - Promedio Final: 16.0
+  - Estatus: APROBADO
+
+3. [V-111] Maria Perez
+  - Programa: Curso
+  - Promedio Final: 11.0
+  - Estatus: APROBADO
+
+4. [V-333] Carlos Ruiz
+  - Programa: Diplomado
+  - Promedio Final: 15.0
+  - Estatus: APROBADO
+
+5. [V-555] Pedro Sanchez
+  - Programa: Bootcamp
+  - Promedio Final: 16.3
+  - Estatus: APROBADO (Cumple regla estricta)
+
+6. [V-101010] nora aumaitre
+  - Programa: Curso
+  - Promedio Final: 17.7
+  - Estatus: APROBADO
+
+=========================================
+* Fin del reporte - Generado por SGA-DO *

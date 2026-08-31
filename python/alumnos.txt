@@ -1,0 +1,14 @@
+21615026,armando lozada,armando@gmail.com,curso,10,11,9
+4423891,judith alvarez,judith@gmail.com,curso,15,17,16
+2297238,luis hernandez,luis@gmail.com,diplomado,4,13,14
+21615027,oscar cruz,oscar@gmail.com,bootcam,15,14,16
+111,Maria Perez,maria@correo.com,Curso,10,12,11
+222,Juan Gomez,juan@correo.com,Curso,8,9,10
+333,Carlos Ruiz,carlos@correo.com,Diplomado,14,15,16
+444,Ana Lopez,ana@correo.com,Diplomado,12,13,14
+555,Pedro Sanchez,pedro@correo.com,Bootcamp,14,15,20
+666,Laura Diaz,laura@correo.com,Bootcamp,20,20,13
+
+101010,nora aumaitre,nora@gmail.com,curso,15,20,18
+202020,raul mendoza,raul@gmail.com,bootcamp
+505050,mario mendoza,mario@gmail.com,curso
