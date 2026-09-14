@@ -1,1 +1,2 @@
 101010,nelson alvarez,nelson@gmail.com,bootcam
+303030,judith alvarez,judith@gmail.com,curso

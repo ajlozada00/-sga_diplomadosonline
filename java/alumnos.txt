@@ -1,1 +1,4 @@
 21615026,armando lozada,armandoj@gmail.com,curso,15,16,20
+4423891,judith alvarez,judith@hotmail.com,diplomado,14,18,10
+2997283,Mario Mendoza,mario@gmail.com,bootcam,10,12,8
+101010,pedro angel,pedro@gmail.com,curso
