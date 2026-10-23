@@ -1,0 +1,8 @@
+21615026,armando lozada,armando@gmail.com,curso,15,18,20
+101010,Pedro mendez,pedro@gmail.com,diplomado,15,18,20
+202020,maria mendoza,maria@gmail.com,diplomado,4,6,10
+303030,mariana cruz,mariana@gmail.com,bootcam,10,15,20
+404040,Juan Gomez,juan@mail.com,Diplomado,16,14,15
+505050,Ana Lopez,ana@mail.com,Bootcamp,14,15,13
+606060,Luis Diaz,luis@mail.com,Curso,10,13,15
+707070,Luis Mendez,luis@gmail.com,curso,14,13,2

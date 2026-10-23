@@ -1,0 +1,27 @@
+=========================================
+REPORTE DE CERTIFICADOS PENDIENTES
+=========================================
+Total de graduandos en cola: 4
+
+1. [V-21615026] armando lozada
+  - Programa: curso
+  - Promedio Final: 17.700000
+  - Estatus: APROBADO
+
+2. [V-101010] Pedro mendez
+  - Programa: diplomado
+  - Promedio Final: 17.700000
+  - Estatus: APROBADO
+
+3. [V-404040] Juan Gomez
+  - Programa: Diplomado
+  - Promedio Final: 15.000000
+  - Estatus: APROBADO
+
+4. [V-606060] Luis Diaz
+  - Programa: Curso
+  - Promedio Final: 12.700000
+  - Estatus: APROBADO
+
+=========================================
+* Fin del reporte - Generado por SGA-DO *

@@ -1,0 +1,3 @@
+4423891,judith alvarez,judith@gmail.com,curso
+101010,nelson alvarez,nelson@gmail.com,diplomado
+202020,Martin peres,martin@gmail.com,bootcam
